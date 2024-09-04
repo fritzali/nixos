@@ -1,5 +1,7 @@
 ## Installation
 
+#### Booting
+
 #### Partitioning
 
 - BOOT (UEFI)
@@ -10,3 +12,5 @@
 #### Encrypting
 
 - LUKS
+
+#### Installing
