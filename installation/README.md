@@ -20,12 +20,12 @@ sudo dd bs=4M conv=fsync oflag=direct status=progress if=path/to/image of=/dev/s
 
 #### Partitioning
 
-- BOOT (UEFI)
-- SWAP
-- EXT4 (LVM)
+###### BOOT (UEFI)
+###### SWAP
+###### EXT4 (LVM)
 
 #### Encrypting
 
-- LUKS
+###### LUKS
 
 #### Installing
