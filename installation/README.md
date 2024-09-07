@@ -16,9 +16,19 @@ sudo umount /dev/sdX*
 ```
 sudo dd bs=4M conv=fsync oflag=direct status=progress if=path/to/image of=/dev/sdX
 ```
-*To be bootable on BIOS and UEFI devices, the ISO image has to be written verbatim to the USB drive. The `of` and `if` flags replace the default input `stdin` and output `stdout` with the specified files, while `status=progress` shows transfer statistics. Use of `oflag=direct` avoids using RAM as writeback cache, with `conv=fsync` ensuring the file is written fully and without errors before finishing. Reasonable speeds are achieved by setting `bs=4M` for a larger simultaneously accessed block size*
+
+*To be bootable on BIOS and UEFI devices, the ISO image has to be written verbatim to the USB drive. The `of` and `if` flags replace the default input `stdin` and output `stdout` with the specified files, while `status=progress` shows transfer statistics. Use of `oflag=direct` avoids using RAM as writeback cache, with `conv=fsync` ensuring the file is written fully and without errors before finishing. Reasonable speeds are achieved by setting `bs=4M` for a larger simultaneously accessed block size.*
 
 Assuming a UEFI system, the following describes a UEFI installation process via the terminal.
+
+1. Plug in the flash drive and turn on or restart the computer.
+2. Open the boot menu by pressing the appropriate key and select the correct boot device.
+
+*Choosing the UEFI option from a GRUB bootloader is easiest.*
+
+Lenovo Legion 5 15ACH6A: *Hold `Fn+F2` or `F2` with `FnLock` enabled during startup.*
+
+3. Select the default installer option and proceed with the following steps.
 
 #### Networking
 
