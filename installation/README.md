@@ -24,9 +24,7 @@ Assuming a UEFI system, the following describes a UEFI installation process via 
 1. Plug in the flash drive and turn on or restart the computer.
 2. Open the boot menu by pressing the appropriate key and select the correct boot device.
 
-*Choosing the UEFI option from a GRUB bootloader is easiest.*
-
-Lenovo Legion 5 15ACH6A: *Hold `Fn+F2` or `F2` with `FnLock` enabled during startup.*
+*Choosing the UEFI option from a GRUB bootloader is easiest. Otherwise, try holding `Fn+F2` or `F2` with `FnLock` enabled during startup.*
 
 3. Select the default installer option and proceed with the following steps.
 
