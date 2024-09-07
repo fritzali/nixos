@@ -18,6 +18,10 @@ sudo dd bs=4M conv=fsync oflag=direct status=progress if=path/to/image of=/dev/s
 ```
 *To be bootable on BIOS and UEFI devices, the ISO image has to be written verbatim to the USB drive. The `of` and `if` flags replace the default input `stdin` and output `stdout` with the specified files, while `status=progress` shows transfer statistics. Use of `oflag=direct` avoids using RAM as writeback cache, with `conv=fsync` ensuring the file is written fully and without errors before finishing. Reasonable speeds are achieved by setting `bs=4M` for a larger simultaneously accessed block size*
 
+Assuming a UEFI system, the following describes a UEFI installation process via the terminal.
+
+#### Networking
+
 #### Partitioning
 
 ###### BOOT (UEFI)
