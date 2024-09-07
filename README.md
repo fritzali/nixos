@@ -4,4 +4,6 @@ This repository contains a personal installation and configuration guide for Nix
 
 Topics are sorted into the following categories:
 
-#### [Installation](https://github.com/fritzali/nixos/blob/main/INSTALL.md)
+#### [Installation](https://github.com/fritzali/nixos/tree/main/installation)
+
+#### [Configuration](https://github.com/fritzali/nixos/tree/main/configuration)
