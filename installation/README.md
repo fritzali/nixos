@@ -1,4 +1,4 @@
-## Installation
+## NixOS Installation
 
 #### Booting
 
