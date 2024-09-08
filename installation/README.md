@@ -32,7 +32,7 @@ sudo -i
 ```
 loadkeys de-latin1
 ```
-*Available options can be found by searching `/run/current-system/etc/kbd/keymaps/i386/qwertz/de_latin1.gz` or similar. Both keyboard layout and time zone location also use `configuration.nix` to set their values.*
+*Available options can be found by searching `/run/current-system/etc/kbd/keymaps/` subdirectories. Both keyboard layout and time zone location also use `configuration.nix` after the initial installation.*
 
 #### Networking
 
