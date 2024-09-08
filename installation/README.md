@@ -45,6 +45,39 @@ Assuming a UEFI system, the following describes a UEFI installation process via 
 
 #### Networking
 
+Assuming no wired connection is available, the following describes how to connect to a wireless home network.
+
+1. Start the service to configure the network:
+
+   ```
+   sudo systemctl start wpa_supplicant
+   ```
+
+2. Run `wpa_cli` and add a new network, which should return `0` as its name:
+   ```
+   add_network
+   ```
+3. Enter the indentifier for an available wireless network:
+   ```
+   set_network 0 ssid "identifier"
+   ```
+4. Enter the password for the same network:
+   ```
+   set_network 0 psk "password"
+   ```
+5. Set the security for a personal network:
+   ```
+   set_network 0 key_mgmt WPA-PSK
+   ```
+6. Enable the network connection and use `quit` to exit the interface:
+   ```
+   enable_network 0
+   ```
+7. Verify the connection by pinging a known address:
+   ```
+   ping www.archlinux.org
+   ```
+
 #### Partitioning
 
 ##### BOOT (UEFI)
