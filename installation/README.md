@@ -22,19 +22,28 @@ sudo dd bs=4M conv=fsync oflag=direct status=progress if=path/to/image of=/dev/s
 Assuming a UEFI system, the following describes a UEFI installation process via the terminal.
 
 1. Plug in the flash drive and turn on or restart the computer.
-2. Open the boot menu by pressing the appropriate key and select the correct boot device.
-3. Select the default installer option and proceed with the following steps.
+2. Open the boot menu by pressing the appropriate key.
+3. Select the correct boot device and proceed with the default installer option.
+5. As the `nixos` user has no password, enter the `root` user by typing:
+```
+sudo -i
+```
+5. If required, switch the keyboard layout, in this case to german language:
+```
+loadkeys de-latin1
+```
+*Available options can be found by searching `/run/current-system/etc/kbd/keymaps/i386/qwertz/de_latin1.gz` or similar. Both keyboard layout and time zone location also use `configuration.nix` to set their values.*
 
 #### Networking
 
 #### Partitioning
 
-###### BOOT (UEFI)
-###### SWAP
-###### EXT4 (LVM)
+##### BOOT (UEFI)
+##### SWAP
+##### EXT4 (LVM)
 
 #### Encrypting
 
-###### LUKS
+##### LUKS
 
 #### Installing
