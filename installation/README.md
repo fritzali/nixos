@@ -62,7 +62,7 @@ Assuming no wired connection is available, the following describes how to connec
    set_network 0 ssid "identifier"
    set_network 0 psk "password"
    ```
-4. Set the security for this same personal network:
+4. Set the security for this personal network:
    ```
    set_network 0 key_mgmt WPA-PSK
    ```
