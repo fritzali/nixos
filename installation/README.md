@@ -53,27 +53,24 @@ Assuming no wired connection is available, the following describes how to connec
    sudo systemctl start wpa_supplicant
    ```
 
-2. Run `wpa_cli` and add a new network, which should return `0` as its name:
+2. Run `wpa_cli` and add a new connection, which should return `0` as its name:
    ```
    add_network
    ```
-3. Enter the indentifier for an available wireless network:
+3. Enter the indentifier and password for an available wireless network:
    ```
    set_network 0 ssid "identifier"
-   ```
-4. Enter the password for the same network:
-   ```
    set_network 0 psk "password"
    ```
-5. Set the security for a personal network:
+4. Set the security for this same personal network:
    ```
    set_network 0 key_mgmt WPA-PSK
    ```
-6. Enable the network connection and use `quit` to exit the interface:
+5. Enable the network connection and type `quit` to exit the interface:
    ```
    enable_network 0
    ```
-7. Verify the connection by pinging a known address:
+6. Verify the connection by pinging a known address:
    ```
    ping www.archlinux.org
    ```
